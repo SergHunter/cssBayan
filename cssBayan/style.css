@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+body{
+  line-height: 1.5;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  
+}
+img{
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  width: 80%;
+}
+.faq{
+  max-width: 500px;
+  margin: 20px auto;
+ 
+}
+.faq:hover .faq-title{
+  color: black;
+  
+}
+.faq:hover .fa-plus{
+
+   opacity: 1;
+   transition: all 0.4s linear;
+}
+
+.faq-item{
+ border-top: 1px solid grey;
+  margin-bottom: 5px;
+}
+.faq-item:hover .faq-img{
+  display: block;  
+}
+
+
+.faq-input{
+  appearance: none; 
+  position: absolute;
+}
+
+.faq-input:checked ~ .faq-img{
+  display: block;
+
+ 
+}
+.faq-input:checked ~.faq-title{
+  color: black;
+}
+.faq-input:checked ~.faq-title > .fa-plus{
+  opacity: 1;
+  transform: rotate(45deg);
+}
+.faq-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:black;
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: .2s ease-in;
+  color: blue;
+}
+
+.fa-plus{
+
+  opacity: 0;
+}
+
+.faq-img{
+  display: none;
+  cursor: pointer;
+
+  
+}
+
+
+
+
